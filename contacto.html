@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jesus Blazquez"/>
+    <title>Contacto - Match-ON!</title>
+    <link rel="icon" href="recursos/imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div id="bloque_superior">
+      <div id="logo_superior">
+        <a href="index.html"><img src="recursos/imagenes/imagenLogo.png" alt="Logo" id="logo_img"/></a>
+      </div>
+      <div id="contenedor_carrousel">
+        <h2 id="header-welcome" data-es="Bienvenido a MATCH-ON!" data-en="Welcome to MATCH-ON!">Bienvenido a MATCH-ON!</h2>
+      </div>
+    </div>
+
+    <button id="navToggle" aria-label="Abrir menu lateral">=></button>
+
+    <div id="Bloque_navegacion">
+      <nav>
+        <a href="perfil.html"><img src="recursos/iconos/iconoPerfil.svg" class="icono_nav" alt="icono_perfil"/><span class="nav-label" data-es="Perfil" data-en="Profile">Perfil</span></a>
+        <a href="menu.html"><img src="recursos/iconos/iconoMenu.svg" class="icono_nav" alt="icono_menu"/><span class="nav-label" data-es="Menu" data-en="Menu">Menu</span></a>
+        <a href="torneos.html"><img src="recursos/iconos/iconoTrofeo.svg" class="icono_nav" alt="icono_trofeo"/><span class="nav-label" data-es="Torneos" data-en="Tournaments">Torneos</span></a>
+        <a href="mapa.html"><img src="recursos/iconos/iconoMapa.svg" class="icono_nav" alt="icono_mapa"/><span class="nav-label" data-es="Mapa" data-en="Map">Mapa</span></a>
+        <a href="juegos.html"><img src="recursos/iconos/iconoArchivos.svg" class="icono_nav" alt="icono_juegos"/><span class="nav-label" data-es="Juegos" data-en="Games">Juegos</span></a>
+        <a href="ajustes.html"><img src="recursos/iconos/iconoAjustes.svg" class="icono_nav" alt="icono_ajustes"/><span class="nav-label" data-es="Ajustes" data-en="Settings">Ajustes</span></a>
+        <a href="contacto.html"><img src="recursos/iconos/iconoSobre.svg" class="icono_nav" alt="icono_contacto"/><span class="nav-label" data-es="Contacto" data-en="Contact">Contacto</span></a>
+      </nav>
+    </div>
+
+    <div id="bloque_central">
+      <div id="bloque_central_up" style="display:block;overflow-y:auto;">
+        <div class="page-hero">
+          <h1 data-es="Contacto y soporte" data-en="Contact & support">Contacto y soporte</h1>
+          <p data-es="¿Tienes alguna pregunta o incidencia? Escribenos y te responderemos en menos de 48 h." data-en="Have a question or issue? Write to us and we'll reply within 48 h.">¿Tienes alguna pregunta o incidencia? Escribenos y te responderemos en menos de 48 h.</p>
+        </div>
+
+        <div class="page-content" style="display:grid;grid-template-columns:1fr 340px;gap:28px;align-items:start;max-width:960px;">
+
+          <!-- Formulario -->
+          <div class="form-container">
+            <h2 class="section-title" data-es="Envianos un mensaje" data-en="Send us a message">Envianos un mensaje</h2>
+            <form data-validate id="form-contacto">
+              <div class="form-group">
+                <label for="c-nombre" data-es="Nombre completo *" data-en="Full name *">Nombre completo *</label>
+                <input type="text" id="c-nombre" name="nombre" required
+                       placeholder="Tu nombre"
+                       data-placeholder-es="Tu nombre"
+                       data-placeholder-en="Your name">
+                <span class="form-error" data-es="Introduce tu nombre" data-en="Enter your name">Introduce tu nombre</span>
+              </div>
+              <div class="form-group">
+                <label for="c-email" data-es="Email *" data-en="Email *">Email *</label>
+                <input type="email" id="c-email" name="email" required
+                       placeholder="correo@ejemplo.com"
+                       data-placeholder-es="correo@ejemplo.com"
+                       data-placeholder-en="email@example.com">
+                <span class="form-error" data-es="Introduce un email valido" data-en="Enter a valid email">Introduce un email valido</span>
+              </div>
+              <div class="form-group">
+                <label for="c-asunto" data-es="Asunto *" data-en="Subject *">Asunto *</label>
+                <select id="c-asunto" name="asunto" required>
+                  <option value="" data-es="Selecciona un asunto..." data-en="Select a subject...">Selecciona un asunto...</option>
+                  <option value="inscripcion" data-es="Problemas con inscripcion" data-en="Registration issues">Problemas con inscripcion</option>
+                  <option value="pago" data-es="Pagos y premios" data-en="Payments & prizes">Pagos y premios</option>
+                  <option value="tecnico" data-es="Soporte tecnico" data-en="Technical support">Soporte tecnico</option>
+                  <option value="sugerencia" data-es="Sugerencia de juego" data-en="Game suggestion">Sugerencia de juego</option>
+                  <option value="otro" data-es="Otro" data-en="Other">Otro</option>
+                </select>
+                <span class="form-error" data-es="Selecciona un asunto" data-en="Select a subject">Selecciona un asunto</span>
+              </div>
+              <div class="form-group">
+                <label for="c-mensaje" data-es="Mensaje *" data-en="Message *">Mensaje *</label>
+                <textarea id="c-mensaje" name="mensaje" required
+                          placeholder="Describe tu consulta con detalle..."
+                          data-placeholder-es="Describe tu consulta con detalle..."
+                          data-placeholder-en="Describe your inquiry in detail..."></textarea>
+                <span class="form-error" data-es="El mensaje no puede estar vacio" data-en="Message cannot be empty">El mensaje no puede estar vacio</span>
+              </div>
+              <div class="form-group" style="flex-direction:row;align-items:center;gap:10px;">
+                <input type="checkbox" id="c-privacidad" name="privacidad" required style="width:auto;flex:none;">
+                <label for="c-privacidad" style="color:#555;font-size:.85rem;font-weight:400;cursor:pointer;">
+                  <span data-es="He leido y acepto la" data-en="I have read and accept the">He leido y acepto la</span>
+                  <a href="documentacion.html#privacidad" style="color:var(--primary);">
+                    <span data-es="politica de privacidad" data-en="privacy policy">politica de privacidad</span>
+                  </a>
+                </label>
+                <span class="form-error" data-es="Debes aceptar la politica de privacidad" data-en="You must accept the privacy policy">Debes aceptar la politica de privacidad</span>
+              </div>
+              <button type="submit" class="btn-primary ripple-btn" style="width:100%;padding:12px;">
+                <span data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</span>
+              </button>
+              <div class="form-success" data-es="¡Mensaje enviado! Te responderemos en breve." data-en="Message sent! We'll reply shortly.">
+                ¡Mensaje enviado! Te responderemos en breve.
+              </div>
+            </form>
+          </div>
+
+          <!-- Info de contacto -->
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="background:#fff;border-radius:12px;padding:20px;box-shadow:0 3px 12px rgba(0,0,0,.07);">
+              <h3 class="section-title" data-es="Informacion de contacto" data-en="Contact information">Informacion de contacto</h3>
+              <p style="margin:0 0 10px;font-size:.9rem;color:#555;">
+                <strong data-es="Email:" data-en="Email:">Email:</strong> soporte@matchon.gg
+              </p>
+              <p style="margin:0 0 10px;font-size:.9rem;color:#555;">
+                <strong data-es="Horario:" data-en="Hours:">Horario:</strong>
+                <span data-es=" Lun–Vie 9:00–18:00 (CET)" data-en=" Mon–Fri 9:00–18:00 (CET)"> Lun–Vie 9:00–18:00 (CET)</span>
+              </p>
+              <p style="margin:0;font-size:.9rem;color:#555;">
+                <strong data-es="Respuesta media:" data-en="Avg. response:">Respuesta media:</strong>
+                <span data-es=" &lt; 24 horas" data-en=" &lt; 24 hours"> &lt; 24 horas</span>
+              </p>
+            </div>
+
+            <div style="background:#fff;border-radius:12px;padding:20px;box-shadow:0 3px 12px rgba(0,0,0,.07);">
+              <h3 class="section-title" data-es="Preguntas frecuentes" data-en="FAQs">Preguntas frecuentes</h3>
+              <details style="margin-bottom:10px;">
+                <summary style="cursor:pointer;font-size:.88rem;font-weight:600;color:var(--primary);" data-es="¿Como me inscribo a un torneo?" data-en="How do I register for a tournament?">¿Como me inscribo a un torneo?</summary>
+                <p style="font-size:.82rem;color:#666;margin:8px 0 0;padding-left:10px;" data-es="Ve a la seccion Torneos, elige el que quieras y pulsa «Inscribirse»." data-en="Go to the Tournaments section, choose one and click «Register».">Ve a la seccion Torneos, elige el que quieras y pulsa «Inscribirse».</p>
+              </details>
+              <details style="margin-bottom:10px;">
+                <summary style="cursor:pointer;font-size:.88rem;font-weight:600;color:var(--primary);" data-es="¿Como cobro mi premio?" data-en="How do I collect my prize?">¿Como cobro mi premio?</summary>
+                <p style="font-size:.82rem;color:#666;margin:8px 0 0;padding-left:10px;" data-es="Los premios se abonan por transferencia bancaria en un plazo de 15 dias tras el torneo." data-en="Prizes are paid by bank transfer within 15 days after the tournament.">Los premios se abonan por transferencia bancaria en un plazo de 15 dias tras el torneo.</p>
+              </details>
+              <details>
+                <summary style="cursor:pointer;font-size:.88rem;font-weight:600;color:var(--primary);" data-es="¿Puedo organizar mi propio torneo?" data-en="Can I organize my own tournament?">¿Puedo organizar mi propio torneo?</summary>
+                <p style="font-size:.82rem;color:#666;margin:8px 0 0;padding-left:10px;" data-es="Si. Usa este formulario indicando «Otro» como asunto y detalla tu propuesta." data-en="Yes. Use this form, select «Other» as subject and describe your proposal.">Si. Usa este formulario indicando «Otro» como asunto y detalla tu propuesta.</p>
+              </details>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="bloque_central_down">
+        <ul>
+          <li><a href="documentacion.html#legal" data-es="Avisos legales" data-en="Legal notices">Avisos legales</a></li>
+          <li><a href="documentacion.html#privacidad" data-es="Politica de privacidad" data-en="Privacy policy">Politica de privacidad</a></li>
+          <li><a href="contacto.html" data-es="Soporte" data-en="Support">Soporte</a></li>
+          <li class="license"><a href="index.html">WebMatch-ON</a>
+            <span class="license-text">© 2026 <a href="index.html">Jesus Blazquez Duran</a>. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span>
+            <span class="license-icons">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="cc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="by">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="nc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="nd">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+  </body>
+</html>

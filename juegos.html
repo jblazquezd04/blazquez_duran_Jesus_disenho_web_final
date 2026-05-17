@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jesus Blazquez"/>
+    <title>Juegos - Match-ON!</title>
+    <link rel="icon" href="recursos/imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div id="bloque_superior">
+      <div id="logo_superior">
+        <a href="index.html"><img src="recursos/imagenes/imagenLogo.png" alt="Logo" id="logo_img"/></a>
+      </div>
+      <div id="contenedor_carrousel">
+        <h2 id="header-welcome" data-es="Bienvenido a MATCH-ON!" data-en="Welcome to MATCH-ON!">Bienvenido a MATCH-ON!</h2>
+      </div>
+    </div>
+
+    <button id="navToggle" aria-label="Abrir menu lateral">=></button>
+
+    <div id="Bloque_navegacion">
+      <nav>
+        <a href="perfil.html"><img src="recursos/iconos/iconoPerfil.svg" class="icono_nav" alt="icono_perfil"/><span class="nav-label" data-es="Perfil" data-en="Profile">Perfil</span></a>
+        <a href="menu.html"><img src="recursos/iconos/iconoMenu.svg" class="icono_nav" alt="icono_menu"/><span class="nav-label" data-es="Menu" data-en="Menu">Menu</span></a>
+        <a href="torneos.html"><img src="recursos/iconos/iconoTrofeo.svg" class="icono_nav" alt="icono_trofeo"/><span class="nav-label" data-es="Torneos" data-en="Tournaments">Torneos</span></a>
+        <a href="mapa.html"><img src="recursos/iconos/iconoMapa.svg" class="icono_nav" alt="icono_mapa"/><span class="nav-label" data-es="Mapa" data-en="Map">Mapa</span></a>
+        <a href="juegos.html"><img src="recursos/iconos/iconoArchivos.svg" class="icono_nav" alt="icono_juegos"/><span class="nav-label" data-es="Juegos" data-en="Games">Juegos</span></a>
+        <a href="ajustes.html"><img src="recursos/iconos/iconoAjustes.svg" class="icono_nav" alt="icono_ajustes"/><span class="nav-label" data-es="Ajustes" data-en="Settings">Ajustes</span></a>
+        <a href="contacto.html"><img src="recursos/iconos/iconoSobre.svg" class="icono_nav" alt="icono_contacto"/><span class="nav-label" data-es="Contacto" data-en="Contact">Contacto</span></a>
+      </nav>
+    </div>
+
+    <div id="bloque_central">
+      <div id="toolbar">
+        <div id="search_bar">
+          <input type="search" id="buscador" class="search-input"
+                 placeholder="Buscar juegos..."
+                 data-placeholder-es="Buscar juegos..."
+                 data-placeholder-en="Search games...">
+          <button id="btnBuscar" class="btn-primary ripple-btn">
+            <span data-es="Buscar" data-en="Search">Buscar</span>
+          </button>
+        </div>
+        <div id="toolbar_right">
+          <span id="resultCount" class="result-count"></span>
+          <button id="langBtn" class="lang-btn ripple-btn">EN</button>
+        </div>
+      </div>
+
+      <div id="bloque_central_up" style="display:block;overflow-y:auto;">
+        <div class="page-hero">
+          <h1 data-es="Catalogo de juegos" data-en="Games catalog">Catalogo de juegos</h1>
+          <p data-es="Explora los juegos disponibles en la plataforma y sus torneos activos" data-en="Explore available games and their active tournaments">Explora los juegos disponibles en la plataforma y sus torneos activos</p>
+        </div>
+
+        <div class="page-content">
+          <div class="filter-bar">
+            <button class="filter-chip active ripple-btn" data-filter="all" data-es="Todos" data-en="All">Todos</button>
+            <button class="filter-chip ripple-btn" data-filter="lucha" data-es="Lucha" data-en="Fighting">Lucha</button>
+            <button class="filter-chip ripple-btn" data-filter="carreras" data-es="Carreras" data-en="Racing">Carreras</button>
+            <button class="filter-chip ripple-btn" data-filter="deportes" data-es="Deportes" data-en="Sports">Deportes</button>
+            <button class="filter-chip ripple-btn" data-filter="estrategia" data-es="Estrategia" data-en="Strategy">Estrategia</button>
+          </div>
+
+          <div class="games-grid" id="games-grid">
+
+            <a href="torneos.html" class="game-card torneo-card" data-search="2xko lucha fighting" data-filter="lucha">
+              <img src="recursos/imagenes/imagen2XKO.jpg" alt="2XKO" class="game-card-img"/>
+              <div class="game-card-body">
+                <div class="game-card-title">2XKO</div>
+                <div class="game-card-genre" data-es="Genero: Lucha" data-en="Genre: Fighting">Genero: Lucha</div>
+                <span class="game-card-badge" data-es="2 torneos activos" data-en="2 active tournaments">2 torneos activos</span>
+              </div>
+            </a>
+
+            <a href="torneos.html" class="game-card torneo-card" data-search="league of legends lol estrategia" data-filter="estrategia">
+              <img src="recursos/imagenes/imagenLoL.jpg" alt="LoL" class="game-card-img"/>
+              <div class="game-card-body">
+                <div class="game-card-title">League of Legends</div>
+                <div class="game-card-genre" data-es="Genero: Estrategia / MOBA" data-en="Genre: Strategy / MOBA">Genero: Estrategia / MOBA</div>
+                <span class="game-card-badge" data-es="2 torneos activos" data-en="2 active tournaments">2 torneos activos</span>
+              </div>
+            </a>
+
+            <a href="torneos.html" class="game-card torneo-card" data-search="fifa football deportes" data-filter="deportes">
+              <img src="recursos/imagenes/imagenFifa.jpg" alt="FIFA" class="game-card-img"/>
+              <div class="game-card-body">
+                <div class="game-card-title">FIFA Champions</div>
+                <div class="game-card-genre" data-es="Genero: Deportes / Futbol" data-en="Genre: Sports / Football">Genero: Deportes / Futbol</div>
+                <span class="game-card-badge" data-es="1 torneo activo" data-en="1 active tournament">1 torneo activo</span>
+              </div>
+            </a>
+
+            <a href="torneos.html" class="game-card torneo-card" data-search="street fighter lucha fighting" data-filter="lucha">
+              <img src="recursos/imagenes/imagenStreet.jpg" alt="Street Fighter" class="game-card-img"/>
+              <div class="game-card-body">
+                <div class="game-card-title">Street Fighter VI</div>
+                <div class="game-card-genre" data-es="Genero: Lucha" data-en="Genre: Fighting">Genero: Lucha</div>
+                <span class="game-card-badge" data-es="1 torneo activo" data-en="1 active tournament">1 torneo activo</span>
+              </div>
+            </a>
+
+            <a href="torneos.html" class="game-card torneo-card" data-search="mario kart carreras racing" data-filter="carreras">
+              <img src="recursos/imagenes/imagenMarioKart.jpg" alt="Mario Kart" class="game-card-img"/>
+              <div class="game-card-body">
+                <div class="game-card-title">Mario Kart</div>
+                <div class="game-card-genre" data-es="Genero: Carreras" data-en="Genre: Racing">Genero: Carreras</div>
+                <span class="game-card-badge" data-es="1 torneo activo" data-en="1 active tournament">1 torneo activo</span>
+              </div>
+            </a>
+
+          </div>
+
+          <div style="margin-top:30px;background:#fff;border-radius:12px;padding:22px;box-shadow:0 3px 12px rgba(0,0,0,.07);">
+            <h2 class="section-title" data-es="¿Falta tu juego?" data-en="Is your game missing?">¿Falta tu juego?</h2>
+            <p data-es="Si quieres que añadamos un juego a la plataforma, escribenos." data-en="If you want us to add a game to the platform, contact us.">Si quieres que añadamos un juego a la plataforma, escribenos.</p>
+            <a href="contacto.html" class="btn-primary ripple-btn" style="display:inline-block;margin-top:8px;text-decoration:none;">
+              <span data-es="Sugerir juego" data-en="Suggest a game">Sugerir juego</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="bloque_central_down">
+        <ul>
+          <li><a href="documentacion.html#legal" data-es="Avisos legales" data-en="Legal notices">Avisos legales</a></li>
+          <li><a href="contacto.html" data-es="Soporte" data-en="Support">Soporte</a></li>
+          <li class="license"><a href="index.html">WebMatch-ON</a>
+            <span class="license-text">© 2026 <a href="index.html">Jesus Blazquez Duran</a>. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span>
+            <span class="license-icons">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="cc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="by">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="nc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="nd">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+  </body>
+</html>

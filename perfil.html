@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jesus Blazquez"/>
+    <title>Perfil - Match-ON!</title>
+    <link rel="icon" href="recursos/imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div id="bloque_superior">
+      <div id="logo_superior">
+        <a href="index.html"><img src="recursos/imagenes/imagenLogo.png" alt="Logo" id="logo_img"/></a>
+      </div>
+      <div id="contenedor_carrousel">
+        <h2 id="header-welcome" data-es="Bienvenido a MATCH-ON!" data-en="Welcome to MATCH-ON!">Bienvenido a MATCH-ON!</h2>
+      </div>
+    </div>
+
+    <button id="navToggle" aria-label="Abrir menu lateral">=></button>
+
+    <div id="Bloque_navegacion">
+      <nav>
+        <a href="perfil.html"><img src="recursos/iconos/iconoPerfil.svg" class="icono_nav" alt="icono_perfil"/><span class="nav-label" data-es="Perfil" data-en="Profile">Perfil</span></a>
+        <a href="menu.html"><img src="recursos/iconos/iconoMenu.svg" class="icono_nav" alt="icono_menu"/><span class="nav-label" data-es="Menu" data-en="Menu">Menu</span></a>
+        <a href="torneos.html"><img src="recursos/iconos/iconoTrofeo.svg" class="icono_nav" alt="icono_trofeo"/><span class="nav-label" data-es="Torneos" data-en="Tournaments">Torneos</span></a>
+        <a href="mapa.html"><img src="recursos/iconos/iconoMapa.svg" class="icono_nav" alt="icono_mapa"/><span class="nav-label" data-es="Mapa" data-en="Map">Mapa</span></a>
+        <a href="juegos.html"><img src="recursos/iconos/iconoArchivos.svg" class="icono_nav" alt="icono_juegos"/><span class="nav-label" data-es="Juegos" data-en="Games">Juegos</span></a>
+        <a href="ajustes.html"><img src="recursos/iconos/iconoAjustes.svg" class="icono_nav" alt="icono_ajustes"/><span class="nav-label" data-es="Ajustes" data-en="Settings">Ajustes</span></a>
+        <a href="contacto.html"><img src="recursos/iconos/iconoSobre.svg" class="icono_nav" alt="icono_contacto"/><span class="nav-label" data-es="Contacto" data-en="Contact">Contacto</span></a>
+      </nav>
+    </div>
+
+    <div id="bloque_central">
+      <div id="bloque_central_up" style="display:block;overflow-y:auto;">
+        <div class="page-content" style="max-width:800px;">
+
+          <!-- Cabecera de perfil -->
+          <div class="profile-header">
+            <div class="profile-avatar">JB</div>
+            <div>
+              <div class="profile-name">Jesus Blazquez</div>
+              <div class="profile-role" data-es="Jugador Pro · Miembro desde 2024" data-en="Pro Player · Member since 2024">Jugador Pro · Miembro desde 2024</div>
+            </div>
+            <button class="btn-secondary ripple-btn" style="margin-left:auto;" data-modal-target="#modal-editar-perfil">
+              <span data-es="Editar perfil" data-en="Edit profile">Editar perfil</span>
+            </button>
+          </div>
+
+          <!-- Estadisticas -->
+          <h2 class="section-title" data-es="Estadisticas" data-en="Statistics">Estadisticas</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-value">12</div>
+              <div class="stat-label" data-es="Torneos jugados" data-en="Tournaments played">Torneos jugados</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">3</div>
+              <div class="stat-label" data-es="Victorias" data-en="Wins">Victorias</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">$850</div>
+              <div class="stat-label" data-es="Premios ganados" data-en="Prizes won">Premios ganados</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">25%</div>
+              <div class="stat-label" data-es="Tasa de victoria" data-en="Win rate">Tasa de victoria</div>
+            </div>
+          </div>
+
+          <!-- Torneos recientes -->
+          <h2 class="section-title" data-es="Torneos recientes" data-en="Recent tournaments">Torneos recientes</h2>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="background:#fff;border-radius:10px;padding:14px 18px;box-shadow:0 3px 10px rgba(0,0,0,.07);display:flex;align-items:center;gap:14px;">
+              <img src="recursos/imagenes/imagenStreet.jpg" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px;flex-shrink:0;">
+              <div style="flex:1;">
+                <div style="font-weight:700;color:var(--primary);font-size:.95rem;">Street Fighter Cup: Toronto</div>
+                <div style="font-size:.8rem;color:#888;" data-es="28/10/2025 · Posicion: 4.º" data-en="28/10/2025 · Position: 4th">28/10/2025 · Posicion: 4.º</div>
+              </div>
+              <span style="background:#fff3e0;color:#e65100;padding:3px 10px;border-radius:12px;font-size:.78rem;font-weight:700;" data-es="Top 8" data-en="Top 8">Top 8</span>
+            </div>
+            <div style="background:#fff;border-radius:10px;padding:14px 18px;box-shadow:0 3px 10px rgba(0,0,0,.07);display:flex;align-items:center;gap:14px;">
+              <img src="recursos/imagenes/imagen2XKO.jpg" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px;flex-shrink:0;">
+              <div style="flex:1;">
+                <div style="font-weight:700;color:var(--primary);font-size:.95rem;">Torneo 2XKO</div>
+                <div style="font-size:.8rem;color:#888;" data-es="20/10/2025 · Posicion: 1.º" data-en="20/10/2025 · Position: 1st">20/10/2025 · Posicion: 1.º</div>
+              </div>
+              <span style="background:#e8f5e9;color:#2e7d32;padding:3px 10px;border-radius:12px;font-size:.78rem;font-weight:700;" data-es="Campeon" data-en="Champion">Campeon</span>
+            </div>
+            <div style="background:#fff;border-radius:10px;padding:14px 18px;box-shadow:0 3px 10px rgba(0,0,0,.07);display:flex;align-items:center;gap:14px;">
+              <img src="recursos/imagenes/imagenLoL.jpg" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px;flex-shrink:0;">
+              <div style="flex:1;">
+                <div style="font-weight:700;color:var(--primary);font-size:.95rem;">Torneo League of Legends</div>
+                <div style="font-size:.8rem;color:#888;" data-es="21/09/2025 · Posicion: 7.º" data-en="21/09/2025 · Position: 7th">21/09/2025 · Posicion: 7.º</div>
+              </div>
+              <span style="background:#f5f5f5;color:#555;padding:3px 10px;border-radius:12px;font-size:.78rem;font-weight:700;">Top 16</span>
+            </div>
+          </div>
+
+          <div style="margin-top:20px;">
+            <a href="torneos.html" class="btn-primary ripple-btn" style="text-decoration:none;display:inline-block;">
+              <span data-es="Ver todos los torneos" data-en="View all tournaments">Ver todos los torneos</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="bloque_central_down">
+        <ul>
+          <li><a href="documentacion.html#legal" data-es="Avisos legales" data-en="Legal notices">Avisos legales</a></li>
+          <li><a href="contacto.html" data-es="Soporte" data-en="Support">Soporte</a></li>
+          <li class="license"><a href="index.html">WebMatch-ON</a>
+            <span class="license-text">© 2026 <a href="index.html">Jesus Blazquez Duran</a>. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span>
+            <span class="license-icons">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="cc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="by">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="nc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="nd">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal editar perfil -->
+    <div class="modal-overlay" id="modal-editar-perfil" role="dialog" aria-modal="true">
+      <div class="modal-box">
+        <div class="modal-title" data-es="Editar perfil" data-en="Edit profile">Editar perfil</div>
+        <form data-validate id="form-perfil">
+          <div class="form-group">
+            <label for="p-nombre" data-es="Nombre *" data-en="Name *">Nombre *</label>
+            <input type="text" id="p-nombre" name="nombre" value="Jesus Blazquez" required>
+            <span class="form-error" data-es="El nombre no puede estar vacio" data-en="Name cannot be empty">El nombre no puede estar vacio</span>
+          </div>
+          <div class="form-group">
+            <label for="p-nickname" data-es="Nickname *" data-en="Nickname *">Nickname *</label>
+            <input type="text" id="p-nickname" name="nickname" value="JBlazq99" required>
+            <span class="form-error" data-es="El nickname no puede estar vacio" data-en="Nickname cannot be empty">El nickname no puede estar vacio</span>
+          </div>
+          <div class="form-group">
+            <label for="p-bio" data-es="Biografia" data-en="Bio">Biografia</label>
+            <textarea id="p-bio" name="bio" style="min-height:80px;" data-placeholder-es="Cuentanos algo sobre ti..." data-placeholder-en="Tell us something about you...">Jugador competitivo desde 2018. Especializado en juegos de lucha y estrategia.</textarea>
+          </div>
+          <div style="display:flex;gap:10px;">
+            <button type="submit" class="btn-primary ripple-btn" style="flex:1;">
+              <span data-es="Guardar cambios" data-en="Save changes">Guardar cambios</span>
+            </button>
+            <button type="button" class="btn-secondary ripple-btn modal-close" style="flex:0 0 auto;">
+              <span data-es="Cancelar" data-en="Cancel">Cancelar</span>
+            </button>
+          </div>
+          <div class="form-success" data-es="Perfil actualizado correctamente." data-en="Profile updated successfully.">
+            Perfil actualizado correctamente.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+  </body>
+</html>

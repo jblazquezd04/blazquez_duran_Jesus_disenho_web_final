@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jesus Blazquez"/>
+    <title>Menu - Match-ON!</title>
+    <link rel="icon" href="recursos/imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div id="bloque_superior">
+      <div id="logo_superior">
+        <a href="index.html"><img src="recursos/imagenes/imagenLogo.png" alt="Logo" id="logo_img"/></a>
+      </div>
+      <div id="contenedor_carrousel">
+        <h2 id="header-welcome" data-es="Bienvenido a MATCH-ON!" data-en="Welcome to MATCH-ON!">Bienvenido a MATCH-ON!</h2>
+      </div>
+    </div>
+
+    <button id="navToggle" aria-label="Abrir menu lateral">=></button>
+
+    <div id="Bloque_navegacion">
+      <nav>
+        <a href="perfil.html"><img src="recursos/iconos/iconoPerfil.svg" class="icono_nav" alt="icono_perfil"/><span class="nav-label" data-es="Perfil" data-en="Profile">Perfil</span></a>
+        <a href="menu.html"><img src="recursos/iconos/iconoMenu.svg" class="icono_nav" alt="icono_menu"/><span class="nav-label" data-es="Menu" data-en="Menu">Menu</span></a>
+        <a href="torneos.html"><img src="recursos/iconos/iconoTrofeo.svg" class="icono_nav" alt="icono_trofeo"/><span class="nav-label" data-es="Torneos" data-en="Tournaments">Torneos</span></a>
+        <a href="mapa.html"><img src="recursos/iconos/iconoMapa.svg" class="icono_nav" alt="icono_mapa"/><span class="nav-label" data-es="Mapa" data-en="Map">Mapa</span></a>
+        <a href="juegos.html"><img src="recursos/iconos/iconoArchivos.svg" class="icono_nav" alt="icono_juegos"/><span class="nav-label" data-es="Juegos" data-en="Games">Juegos</span></a>
+        <a href="ajustes.html"><img src="recursos/iconos/iconoAjustes.svg" class="icono_nav" alt="icono_ajustes"/><span class="nav-label" data-es="Ajustes" data-en="Settings">Ajustes</span></a>
+        <a href="contacto.html"><img src="recursos/iconos/iconoSobre.svg" class="icono_nav" alt="icono_contacto"/><span class="nav-label" data-es="Contacto" data-en="Contact">Contacto</span></a>
+      </nav>
+    </div>
+
+    <div id="bloque_central">
+      <div id="bloque_central_up" style="display:block;overflow-y:auto;">
+        <div class="page-hero">
+          <h1 data-es="Panel principal" data-en="Main dashboard">Panel principal</h1>
+          <p data-es="Bienvenido a Match-ON! — accede rapidamente a todas las secciones." data-en="Welcome to Match-ON! — quickly access all sections.">Bienvenido a Match-ON! — accede rapidamente a todas las secciones.</p>
+        </div>
+
+        <div class="page-content">
+
+          <!-- Avisos / anuncios -->
+          <h2 class="section-title" data-es="Avisos recientes" data-en="Recent announcements">Avisos recientes</h2>
+          <div class="announcement">
+            <div class="announcement-title" data-es="¡Nuevo torneo de Mario Kart en directo!" data-en="New live Mario Kart tournament!">¡Nuevo torneo de Mario Kart en directo!</div>
+            <div class="announcement-text" data-es="El torneo de demostracion esta activo ahora mismo. unete desde la seccion Torneos." data-en="The demo tournament is active right now. Join from the Tournaments section.">El torneo de demostracion esta activo ahora mismo. unete desde la seccion Torneos.</div>
+          </div>
+          <div class="announcement">
+            <div class="announcement-title" data-es="Street Fighter Cup: Toronto — plazas agotadas" data-en="Street Fighter Cup: Toronto — sold out">Street Fighter Cup: Toronto — plazas agotadas</div>
+            <div class="announcement-text" data-es="Las 128 plazas estan ocupadas. Apuntate a la lista de espera." data-en="All 128 slots are taken. Join the waitlist.">Las 128 plazas estan ocupadas. Apuntate a la lista de espera.</div>
+          </div>
+          <div class="announcement">
+            <div class="announcement-title" data-es="FIFA Champions — ultimas 3 plazas" data-en="FIFA Champions — last 3 slots">FIFA Champions — ultimas 3 plazas</div>
+            <div class="announcement-text" data-es="Solo quedan 3 plazas para el torneo con el mayor premio del mes ($2500)." data-en="Only 3 slots left for the month's biggest prize tournament ($2500).">Solo quedan 3 plazas para el torneo con el mayor premio del mes ($2500).</div>
+          </div>
+
+          <!-- Acceso rapido -->
+          <h2 class="section-title" style="margin-top:28px;" data-es="Acceso rapido" data-en="Quick access">Acceso rapido</h2>
+          <div class="menu-grid">
+            <a href="perfil.html" class="menu-card ripple-btn">
+              <div class="menu-card-icon"><img src="recursos/iconos/iconoPerfil.svg" alt=""/></div>
+              <div class="menu-card-title" data-es="Mi perfil" data-en="My profile">Mi perfil</div>
+              <div class="menu-card-desc" data-es="Ver estadisticas y torneos recientes" data-en="View stats and recent tournaments">Ver estadisticas y torneos recientes</div>
+            </a>
+            <a href="torneos.html" class="menu-card ripple-btn">
+              <div class="menu-card-icon"><img src="recursos/iconos/iconoTrofeo.svg" alt=""/></div>
+              <div class="menu-card-title" data-es="Torneos" data-en="Tournaments">Torneos</div>
+              <div class="menu-card-desc" data-es="Explora e inscribete en torneos activos" data-en="Explore and join active tournaments">Explora e inscribete en torneos activos</div>
+            </a>
+            <a href="juegos.html" class="menu-card ripple-btn">
+              <div class="menu-card-icon"><img src="recursos/iconos/iconoArchivos.svg" alt=""/></div>
+              <div class="menu-card-title" data-es="Juegos" data-en="Games">Juegos</div>
+              <div class="menu-card-desc" data-es="Catalogo completo de titulos disponibles" data-en="Full catalog of available titles">Catalogo completo de titulos disponibles</div>
+            </a>
+            <a href="mapa.html" class="menu-card ripple-btn">
+              <div class="menu-card-icon"><img src="recursos/iconos/iconoMapa.svg" alt=""/></div>
+              <div class="menu-card-title" data-es="Mapa" data-en="Map">Mapa</div>
+              <div class="menu-card-desc" data-es="Torneos presenciales cerca de ti" data-en="In-person tournaments near you">Torneos presenciales cerca de ti</div>
+            </a>
+            <a href="ajustes.html" class="menu-card ripple-btn">
+              <div class="menu-card-icon"><img src="recursos/iconos/iconoAjustes.svg" alt=""/></div>
+              <div class="menu-card-title" data-es="Ajustes" data-en="Settings">Ajustes</div>
+              <div class="menu-card-desc" data-es="Idioma, tema y notificaciones" data-en="Language, theme and notifications">Idioma, tema y notificaciones</div>
+            </a>
+            <a href="contacto.html" class="menu-card ripple-btn">
+              <div class="menu-card-icon"><img src="recursos/iconos/iconoSobre.svg" alt=""/></div>
+              <div class="menu-card-title" data-es="Contacto" data-en="Contact">Contacto</div>
+              <div class="menu-card-desc" data-es="Soporte y preguntas frecuentes" data-en="Support and FAQs">Soporte y preguntas frecuentes</div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="bloque_central_down">
+        <ul>
+          <li><a href="documentacion.html#legal" data-es="Avisos legales" data-en="Legal notices">Avisos legales</a></li>
+          <li><a href="contacto.html" data-es="Soporte" data-en="Support">Soporte</a></li>
+          <li class="license"><a href="index.html">WebMatch-ON</a>
+            <span class="license-text">© 2026 <a href="index.html">Jesus Blazquez Duran</a>. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span>
+            <span class="license-icons">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="cc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="by">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="nc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="nd">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+  </body>
+</html>

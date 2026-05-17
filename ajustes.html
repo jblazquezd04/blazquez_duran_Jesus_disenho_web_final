@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jesus Blazquez"/>
+    <title>Ajustes - Match-ON!</title>
+    <link rel="icon" href="recursos/imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div id="bloque_superior">
+      <div id="logo_superior">
+        <a href="index.html"><img src="recursos/imagenes/imagenLogo.png" alt="Logo" id="logo_img"/></a>
+      </div>
+      <div id="contenedor_carrousel">
+        <h2 id="header-welcome" data-es="Bienvenido a MATCH-ON!" data-en="Welcome to MATCH-ON!">Bienvenido a MATCH-ON!</h2>
+      </div>
+    </div>
+
+    <button id="navToggle" aria-label="Abrir menu lateral">=></button>
+
+    <div id="Bloque_navegacion">
+      <nav>
+        <a href="perfil.html"><img src="recursos/iconos/iconoPerfil.svg" class="icono_nav" alt="icono_perfil"/><span class="nav-label" data-es="Perfil" data-en="Profile">Perfil</span></a>
+        <a href="menu.html"><img src="recursos/iconos/iconoMenu.svg" class="icono_nav" alt="icono_menu"/><span class="nav-label" data-es="Menu" data-en="Menu">Menu</span></a>
+        <a href="torneos.html"><img src="recursos/iconos/iconoTrofeo.svg" class="icono_nav" alt="icono_trofeo"/><span class="nav-label" data-es="Torneos" data-en="Tournaments">Torneos</span></a>
+        <a href="mapa.html"><img src="recursos/iconos/iconoMapa.svg" class="icono_nav" alt="icono_mapa"/><span class="nav-label" data-es="Mapa" data-en="Map">Mapa</span></a>
+        <a href="juegos.html"><img src="recursos/iconos/iconoArchivos.svg" class="icono_nav" alt="icono_juegos"/><span class="nav-label" data-es="Juegos" data-en="Games">Juegos</span></a>
+        <a href="ajustes.html"><img src="recursos/iconos/iconoAjustes.svg" class="icono_nav" alt="icono_ajustes"/><span class="nav-label" data-es="Ajustes" data-en="Settings">Ajustes</span></a>
+        <a href="contacto.html"><img src="recursos/iconos/iconoSobre.svg" class="icono_nav" alt="icono_contacto"/><span class="nav-label" data-es="Contacto" data-en="Contact">Contacto</span></a>
+      </nav>
+    </div>
+
+    <div id="bloque_central">
+      <div id="bloque_central_up" style="display:block;overflow-y:auto;">
+        <div class="page-hero">
+          <h1 data-es="Ajustes" data-en="Settings">Ajustes</h1>
+          <p data-es="Personaliza tu experiencia en Match-ON!" data-en="Customize your Match-ON! experience">Personaliza tu experiencia en Match-ON!</p>
+        </div>
+
+        <div class="page-content" style="max-width:680px;">
+
+          <!-- Idioma -->
+          <div class="settings-section">
+            <div class="settings-title" data-es="Idioma y region" data-en="Language & region">Idioma y region</div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" data-es="Idioma de la interfaz" data-en="Interface language">Idioma de la interfaz</div>
+                <div class="settings-desc" data-es="Cambia el idioma de todos los textos de la aplicacion" data-en="Change the language of all app texts">Cambia el idioma de todos los textos de la aplicacion</div>
+              </div>
+              <select id="langSelect" style="padding:7px 12px;border:2px solid #cdd2e8;border-radius:8px;font-family:inherit;font-size:.88rem;outline:none;cursor:pointer;background:#fafbff;color:#222;">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+              </select>
+            </div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" data-es="Zona horaria" data-en="Time zone">Zona horaria</div>
+                <div class="settings-desc">UTC+1 (CET)</div>
+              </div>
+              <select style="padding:7px 12px;border:2px solid #cdd2e8;border-radius:8px;font-family:inherit;font-size:.88rem;outline:none;cursor:pointer;background:#fafbff;color:#222;">
+                <option>UTC+1 (CET)</option>
+                <option>UTC+0 (GMT)</option>
+                <option>UTC−5 (EST)</option>
+                <option>UTC+9 (JST)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Apariencia -->
+          <div class="settings-section">
+            <div class="settings-title" data-es="Apariencia" data-en="Appearance">Apariencia</div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" data-es="Tema oscuro" data-en="Dark theme">Tema oscuro</div>
+                <div class="settings-desc" data-es="Activa el modo oscuro en toda la aplicacion" data-en="Enable dark mode across the app">Activa el modo oscuro en toda la aplicacion</div>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" data-es="Animaciones" data-en="Animations">Animaciones</div>
+                <div class="settings-desc" data-es="Efectos de transicion y movimiento" data-en="Transition and motion effects">Efectos de transicion y movimiento</div>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Notificaciones -->
+          <div class="settings-section">
+            <div class="settings-title" data-es="Notificaciones" data-en="Notifications">Notificaciones</div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" data-es="Nuevos torneos" data-en="New tournaments">Nuevos torneos</div>
+                <div class="settings-desc" data-es="Aviso cuando se publique un nuevo torneo" data-en="Alert when a new tournament is published">Aviso cuando se publique un nuevo torneo</div>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" data-es="Recordatorios de inicio" data-en="Start reminders">Recordatorios de inicio</div>
+                <div class="settings-desc" data-es="Recibe un aviso 1 hora antes del torneo" data-en="Get an alert 1 hour before the tournament">Recibe un aviso 1 hora antes del torneo</div>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" data-es="Noticias y ofertas" data-en="News & offers">Noticias y ofertas</div>
+                <div class="settings-desc" data-es="Boletin semanal con novedades de la plataforma" data-en="Weekly newsletter with platform news">Boletin semanal con novedades de la plataforma</div>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Cuenta -->
+          <div class="settings-section">
+            <div class="settings-title" data-es="Cuenta" data-en="Account">Cuenta</div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" data-es="Cambiar contraseña" data-en="Change password">Cambiar contraseña</div>
+              </div>
+              <button class="btn-secondary ripple-btn" style="font-size:.82rem;padding:6px 14px;">
+                <span data-es="Cambiar" data-en="Change">Cambiar</span>
+              </button>
+            </div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" data-es="Exportar mis datos" data-en="Export my data">Exportar mis datos</div>
+                <div class="settings-desc" data-es="Descarga un archivo con toda tu informacion" data-en="Download a file with all your information">Descarga un archivo con toda tu informacion</div>
+              </div>
+              <button class="btn-secondary ripple-btn" style="font-size:.82rem;padding:6px 14px;">
+                <span data-es="Exportar" data-en="Export">Exportar</span>
+              </button>
+            </div>
+
+            <div class="settings-row">
+              <div>
+                <div class="settings-label" style="color:#e53935;" data-es="Eliminar cuenta" data-en="Delete account">Eliminar cuenta</div>
+                <div class="settings-desc" data-es="Esta accion es irreversible" data-en="This action is irreversible">Esta accion es irreversible</div>
+              </div>
+              <button class="btn-danger ripple-btn" style="font-size:.82rem;padding:6px 14px;" data-modal-target="#modal-borrar-cuenta">
+                <span data-es="Eliminar" data-en="Delete">Eliminar</span>
+              </button>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-top:10px;">
+            <button class="btn-primary ripple-btn" id="saveSettings">
+              <span data-es="Guardar ajustes" data-en="Save settings">Guardar ajustes</span>
+            </button>
+            <a href="index.html" class="btn-secondary ripple-btn" style="text-decoration:none;display:inline-flex;align-items:center;">
+              <span data-es="Volver al inicio" data-en="Back to home">Volver al inicio</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="bloque_central_down">
+        <ul>
+          <li><a href="documentacion.html#legal" data-es="Avisos legales" data-en="Legal notices">Avisos legales</a></li>
+          <li><a href="contacto.html" data-es="Soporte" data-en="Support">Soporte</a></li>
+          <li class="license"><a href="index.html">WebMatch-ON</a>
+            <span class="license-text">© 2026 <a href="index.html">Jesus Blazquez Duran</a>. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span>
+            <span class="license-icons">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="cc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="by">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="nc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="nd">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal confirmacion borrar cuenta -->
+    <div class="modal-overlay" id="modal-borrar-cuenta" role="dialog" aria-modal="true">
+      <div class="modal-box">
+        <div class="modal-title" style="color:#e53935;" data-es="Eliminar cuenta" data-en="Delete account">Eliminar cuenta</div>
+        <p style="color:#555;font-size:.92rem;margin-bottom:18px;" data-es="¿Estas seguro? Esta accion eliminara permanentemente tu cuenta y todos tus datos. No se puede deshacer." data-en="Are you sure? This will permanently delete your account and all your data. It cannot be undone.">¿Estas seguro? Esta accion eliminara permanentemente tu cuenta y todos tus datos. No se puede deshacer.</p>
+        <div style="display:flex;gap:10px;">
+          <button class="btn-danger ripple-btn" style="flex:1;" data-es="Si, eliminar" data-en="Yes, delete">Si, eliminar</button>
+          <button class="btn-secondary ripple-btn modal-close" style="flex:1;" data-es="Cancelar" data-en="Cancel">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+    <script>
+      const saveBtn = document.getElementById('saveSettings');
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          saveBtn.textContent = '✓ Guardado';
+          setTimeout(() => {
+            const lang = localStorage.getItem('matchon_lang') || 'es';
+            saveBtn.textContent = lang === 'en' ? 'Save settings' : 'Guardar ajustes';
+          }, 2000);
+        });
+      }
+    </script>
+  </body>
+</html>

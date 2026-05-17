@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jesus Blazquez"/>
+    <title>Torneos - Match-ON!</title>
+    <link rel="icon" href="recursos/imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div id="bloque_superior">
+      <div id="logo_superior">
+        <a href="index.html"><img src="recursos/imagenes/imagenLogo.png" alt="Logo" id="logo_img"/></a>
+      </div>
+      <div id="contenedor_carrousel">
+        <h2 id="header-welcome" data-es="Bienvenido a MATCH-ON!" data-en="Welcome to MATCH-ON!">Bienvenido a MATCH-ON!</h2>
+      </div>
+    </div>
+
+    <button id="navToggle" aria-label="Abrir menu lateral">=></button>
+
+    <div id="Bloque_navegacion">
+      <nav>
+        <a href="perfil.html"><img src="recursos/iconos/iconoPerfil.svg" class="icono_nav" alt="icono_perfil"/><span class="nav-label" data-es="Perfil" data-en="Profile">Perfil</span></a>
+        <a href="menu.html"><img src="recursos/iconos/iconoMenu.svg" class="icono_nav" alt="icono_menu"/><span class="nav-label" data-es="Menu" data-en="Menu">Menu</span></a>
+        <a href="torneos.html"><img src="recursos/iconos/iconoTrofeo.svg" class="icono_nav" alt="icono_trofeo"/><span class="nav-label" data-es="Torneos" data-en="Tournaments">Torneos</span></a>
+        <a href="mapa.html"><img src="recursos/iconos/iconoMapa.svg" class="icono_nav" alt="icono_mapa"/><span class="nav-label" data-es="Mapa" data-en="Map">Mapa</span></a>
+        <a href="juegos.html"><img src="recursos/iconos/iconoArchivos.svg" class="icono_nav" alt="icono_juegos"/><span class="nav-label" data-es="Juegos" data-en="Games">Juegos</span></a>
+        <a href="ajustes.html"><img src="recursos/iconos/iconoAjustes.svg" class="icono_nav" alt="icono_ajustes"/><span class="nav-label" data-es="Ajustes" data-en="Settings">Ajustes</span></a>
+        <a href="contacto.html"><img src="recursos/iconos/iconoSobre.svg" class="icono_nav" alt="icono_contacto"/><span class="nav-label" data-es="Contacto" data-en="Contact">Contacto</span></a>
+      </nav>
+    </div>
+
+    <div id="bloque_central">
+      <div id="toolbar">
+        <div id="search_bar">
+          <input type="search" id="buscador" class="search-input"
+                 placeholder="Buscar torneos..."
+                 data-placeholder-es="Buscar torneos..."
+                 data-placeholder-en="Search tournaments..."
+                 aria-label="Buscador">
+          <button id="btnBuscar" class="btn-primary ripple-btn">
+            <span data-es="Buscar" data-en="Search">Buscar</span>
+          </button>
+        </div>
+        <div id="toolbar_right">
+          <span id="resultCount" class="result-count"></span>
+          <button id="langBtn" class="lang-btn ripple-btn">EN</button>
+        </div>
+      </div>
+
+      <div id="bloque_central_up" style="flex-direction:column;display:flex;gap:0;padding:0;">
+        <div class="page-hero">
+          <h1 data-es="Torneos activos" data-en="Active tournaments">Torneos activos</h1>
+          <p data-es="Inscribete y compite por los mejores premios" data-en="Sign up and compete for the best prizes">Inscribete y compite por los mejores premios</p>
+        </div>
+
+        <!-- Filtros -->
+        <div style="padding:16px 20px 0;">
+          <div class="filter-bar">
+            <button class="filter-chip active ripple-btn" data-filter="all" data-es="Todos" data-en="All">Todos</button>
+            <button class="filter-chip ripple-btn" data-filter="lucha" data-es="Lucha" data-en="Fighting">Lucha</button>
+            <button class="filter-chip ripple-btn" data-filter="carreras" data-es="Carreras" data-en="Racing">Carreras</button>
+            <button class="filter-chip ripple-btn" data-filter="deportes" data-es="Deportes" data-en="Sports">Deportes</button>
+            <button class="filter-chip ripple-btn" data-filter="estrategia" data-es="Estrategia" data-en="Strategy">Estrategia</button>
+          </div>
+        </div>
+
+        <!-- Requisitos de participacion -->
+        <div style="padding:8px 20px 0;">
+          <ul class="req-list">
+            <li data-es="Cuenta activa en Match-ON!" data-en="Active Match-ON! account">Cuenta activa en Match-ON!</li>
+            <li data-es="Plataforma compatible con el juego seleccionado" data-en="Platform compatible with the selected game">Plataforma compatible con el juego seleccionado</li>
+            <li data-es="Conexion a internet estable durante el torneo" data-en="Stable internet connection during the tournament">Conexion a internet estable durante el torneo</li>
+            <li data-es="Inscripcion completada antes de la fecha de inicio" data-en="Registration completed before the start date">Inscripcion completada antes de la fecha de inicio</li>
+          </ul>
+        </div>
+
+        <!-- Grid de torneos -->
+        <div id="bloque_torneos" style="
+          display:grid;
+          grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+          gap:20px;
+          padding:16px 20px 20px;
+          flex:1;
+        ">
+
+          <div class="torneo-card" data-search="torneo 2xko jesus blazquez 500 lucha" data-filter="lucha">
+            <div class="trending-box"><img src="recursos/iconos/iconoFuego.png" alt="" class="fire-icon"/><span class="trending-text">tendencia</span></div>
+            <img src="recursos/imagenes/imagen2XKO.jpg" alt="2XKO" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Torneo 2XKO</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Jesus Blazquez</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $500</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 20/10/2025</p>
+              <p style="font-size:.82rem;color:#666;" data-es="Plazas disponibles: 12/16" data-en="Slots available: 12/16">Plazas disponibles: 12/16</p>
+              <button class="btn-primary ripple-btn" style="margin-top:10px;" data-modal-target="#modal-inscripcion" data-torneo="Torneo 2XKO">
+                <span data-es="Inscribirse" data-en="Register">Inscribirse</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="torneo-card" data-search="league of legends lol jesus blazquez 200 estrategia" data-filter="estrategia">
+            <div class="trending-box"><img src="recursos/iconos/iconoFuego.png" alt="" class="fire-icon"/><span class="trending-text">tendencia</span></div>
+            <img src="recursos/imagenes/imagenLoL.jpg" alt="LoL" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Torneo League of Legends</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Jesus Blazquez</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $200</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 21/11/2025</p>
+              <p style="font-size:.82rem;color:#666;" data-es="Plazas disponibles: 8/32" data-en="Slots available: 8/32">Plazas disponibles: 8/32</p>
+              <button class="btn-primary ripple-btn" style="margin-top:10px;" data-modal-target="#modal-inscripcion" data-torneo="Torneo League of Legends">
+                <span data-es="Inscribirse" data-en="Register">Inscribirse</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="torneo-card" data-search="fifa champions electronic arts 2500 deportes" data-filter="deportes">
+            <div class="trending-box"><img src="recursos/iconos/iconoFuego.png" alt="" class="fire-icon"/><span class="trending-text">tendencia</span></div>
+            <img src="recursos/imagenes/imagenFifa.jpg" alt="FIFA" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">FIFA Champions</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Electronic Arts</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $2500</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 30/11/2025</p>
+              <p style="font-size:.82rem;color:#666;" data-es="Plazas disponibles: 3/64" data-en="Slots available: 3/64">Plazas disponibles: 3/64</p>
+              <button class="btn-primary ripple-btn" style="margin-top:10px;" data-modal-target="#modal-inscripcion" data-torneo="FIFA Champions">
+                <span data-es="Inscribirse" data-en="Register">Inscribirse</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="torneo-card" data-search="street fighter cup toronto evo 10000 lucha" data-filter="lucha">
+            <div class="trending-box"><img src="recursos/iconos/iconoFuego.png" alt="" class="fire-icon"/><span class="trending-text">tendencia</span></div>
+            <img src="recursos/imagenes/imagenStreet.jpg" alt="Street Fighter" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Street Fighter Cup: Toronto</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: EVO</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $10000</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 28/10/2025</p>
+              <p style="font-size:.82rem;color:#666;" data-es="Plazas disponibles: 0/128 — LLENO" data-en="Slots available: 0/128 — FULL">Plazas disponibles: 0/128 — LLENO</p>
+              <button class="btn-secondary ripple-btn" style="margin-top:10px;" disabled>
+                <span data-es="Lista de espera" data-en="Waitlist">Lista de espera</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="torneo-card" data-search="mario kart comunidad 300 carreras directo" data-filter="carreras">
+            <div class="trending-box"><img src="recursos/iconos/iconoFuego.png" alt="" class="fire-icon"/><span class="trending-text">tendencia</span></div>
+            <span class="live-badge" data-es="En directo" data-en="Live">En directo</span>
+            <img src="recursos/imagenes/imagenMarioKart.jpg" alt="Mario Kart" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Torneo Mario Kart</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Comunidad</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $300</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 05/03/2026</p>
+              <audio controls class="torneo-audio" style="margin-top:8px;">
+                <source src="recursos/videos/CarreraMarioKart.mp4" type="audio/mp4">
+              </audio>
+              <button class="btn-primary ripple-btn" style="margin-top:10px;" data-modal-target="#modal-inscripcion" data-torneo="Torneo Mario Kart">
+                <span data-es="Inscribirse" data-en="Register">Inscribirse</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="bloque_central_down">
+        <ul>
+          <li><a href="documentacion.html#legal" data-es="Avisos legales" data-en="Legal notices">Avisos legales</a></li>
+          <li><a href="documentacion.html#privacidad" data-es="Politica de privacidad" data-en="Privacy policy">Politica de privacidad</a></li>
+          <li><a href="contacto.html" data-es="Soporte" data-en="Support">Soporte</a></li>
+          <li class="license"><a href="index.html">WebMatch-ON</a>
+            <span class="license-text">© 2026 <a href="index.html">Jesus Blazquez Duran</a>. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span>
+            <span class="license-icons">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="cc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="by">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="nc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="nd">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal de inscripcion -->
+    <div class="modal-overlay" id="modal-inscripcion" role="dialog" aria-modal="true" aria-labelledby="modal-inscripcion-title">
+      <div class="modal-box">
+        <div class="modal-title" id="modal-inscripcion-title" data-es="Inscripcion al torneo" data-en="Tournament registration">Inscripcion al torneo</div>
+        <form data-validate id="form-inscripcion">
+          <div class="form-group">
+            <label for="ins-nombre" data-es="Nombre de jugador *" data-en="Player name *">Nombre de jugador *</label>
+            <input type="text" id="ins-nombre" name="nombre" required
+                   placeholder="Tu nickname en el juego"
+                   data-placeholder-es="Tu nickname en el juego"
+                   data-placeholder-en="Your in-game nickname">
+            <span class="form-error" data-es="Este campo es obligatorio" data-en="This field is required">Este campo es obligatorio</span>
+          </div>
+          <div class="form-group">
+            <label for="ins-email" data-es="Email de contacto *" data-en="Contact email *">Email de contacto *</label>
+            <input type="email" id="ins-email" name="email" required
+                   placeholder="correo@ejemplo.com"
+                   data-placeholder-es="correo@ejemplo.com"
+                   data-placeholder-en="email@example.com">
+            <span class="form-error" data-es="Introduce un email valido" data-en="Enter a valid email">Introduce un email valido</span>
+          </div>
+          <div class="form-group">
+            <label for="ins-plataforma" data-es="Plataforma *" data-en="Platform *">Plataforma *</label>
+            <select id="ins-plataforma" name="plataforma" required>
+              <option value="" data-es="Selecciona plataforma..." data-en="Select platform...">Selecciona plataforma...</option>
+              <option value="pc">PC</option>
+              <option value="ps5">PlayStation 5</option>
+              <option value="xbox">Xbox Series X/S</option>
+              <option value="switch">Nintendo Switch</option>
+            </select>
+            <span class="form-error" data-es="Selecciona una plataforma" data-en="Select a platform">Selecciona una plataforma</span>
+          </div>
+          <div class="form-group">
+            <label for="ins-comentarios" data-es="Comentarios (opcional)" data-en="Comments (optional)">Comentarios (opcional)</label>
+            <textarea id="ins-comentarios" name="comentarios" placeholder="Algo mas que quieras indicar..."
+                      data-placeholder-es="Algo mas que quieras indicar..."
+                      data-placeholder-en="Anything else you want to mention..." style="min-height:80px;"></textarea>
+          </div>
+          <div style="display:flex;gap:10px;">
+            <button type="submit" class="btn-primary ripple-btn" style="flex:1;">
+              <span data-es="Confirmar inscripcion" data-en="Confirm registration">Confirmar inscripcion</span>
+            </button>
+            <button type="button" class="btn-secondary ripple-btn modal-close" style="flex:0 0 auto;">
+              <span data-es="Cancelar" data-en="Cancel">Cancelar</span>
+            </button>
+          </div>
+          <div class="form-success" data-es="Inscripcion confirmada. Recibiras un email con los detalles." data-en="Registration confirmed! You'll receive an email with details.">
+            Inscripcion confirmada. Recibiras un email con los detalles.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+    <script>
+      // Pasar nombre del torneo al modal al abrir
+      document.querySelectorAll('[data-modal-target="#modal-inscripcion"]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const title = document.querySelector('#modal-inscripcion .modal-title');
+          const lang  = localStorage.getItem('matchon_lang') || 'es';
+          const base  = lang === 'en' ? 'Register for: ' : 'Inscripcion: ';
+          if (title) title.textContent = base + (btn.dataset.torneo || '');
+        });
+      });
+    </script>
+  </body>
+</html>

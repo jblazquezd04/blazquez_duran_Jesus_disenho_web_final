@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jesus Blazquez"/>
+    <title>TorneosOnlineJesusBlazquez</title>
+    <link rel="icon" href="recursos/imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div id="bloque_superior">
+      <div id="logo_superior">
+        <a href="index.html"><img src="recursos/imagenes/imagenLogo.png" alt="Logo" id="logo_img"/></a>
+      </div>
+      <div id="contenedor_carrousel">
+        <h1 id="header-welcome" data-es="Bienvenido a MATCH-ON!" data-en="Welcome to MATCH-ON!">Bienvenido a MATCH-ON!</h1>
+      </div>
+    </div>
+
+    <button id="navToggle" aria-label="Abrir menu lateral">=></button>
+
+    <div id="Bloque_navegacion">
+      <nav>
+        <a href="perfil.html">
+          <img src="recursos/iconos/iconoPerfil.svg" class="icono_nav" alt="icono_perfil"/>
+          <span class="nav-label" data-es="Perfil" data-en="Profile">Perfil</span>
+        </a>
+        <a href="menu.html">
+          <img src="recursos/iconos/iconoMenu.svg" class="icono_nav" alt="icono_menu"/>
+          <span class="nav-label" data-es="Menu" data-en="Menu">Menu</span>
+        </a>
+        <a href="torneos.html">
+          <img src="recursos/iconos/iconoTrofeo.svg" class="icono_nav" alt="icono_trofeo"/>
+          <span class="nav-label" data-es="Torneos" data-en="Tournaments">Torneos</span>
+        </a>
+        <a href="mapa.html">
+          <img src="recursos/iconos/iconoMapa.svg" class="icono_nav" alt="icono_mapa"/>
+          <span class="nav-label" data-es="Mapa" data-en="Map">Mapa</span>
+        </a>
+        <a href="juegos.html">
+          <img src="recursos/iconos/iconoArchivos.svg" class="icono_nav" alt="icono_juegos"/>
+          <span class="nav-label" data-es="Juegos" data-en="Games">Juegos</span>
+        </a>
+        <a href="ajustes.html">
+          <img src="recursos/iconos/iconoAjustes.svg" class="icono_nav" alt="icono_ajustes"/>
+          <span class="nav-label" data-es="Ajustes" data-en="Settings">Ajustes</span>
+        </a>
+        <a href="contacto.html">
+          <img src="recursos/iconos/iconoSobre.svg" class="icono_nav" alt="icono_contacto"/>
+          <span class="nav-label" data-es="Contacto" data-en="Contact">Contacto</span>
+        </a>
+      </nav>
+    </div>
+
+    <div id="bloque_central">
+      <div id="toolbar">
+        <div id="search_bar">
+          <input type="search" id="buscador" class="search-input"
+                 placeholder="Buscar torneos..."
+                 data-placeholder-es="Buscar torneos..."
+                 data-placeholder-en="Search tournaments..."
+                 aria-label="Buscador de torneos">
+          <button id="btnBuscar" class="btn-primary ripple-btn">
+            <span data-es="Buscar" data-en="Search">Buscar</span>
+          </button>
+        </div>
+        <div id="toolbar_right">
+          <span id="resultCount" class="result-count"></span>
+          <button id="langBtn" class="lang-btn ripple-btn" title="Cambiar idioma / Switch language">EN</button>
+        </div>
+      </div>
+
+      <div id="bloque_central_up">
+
+        <!-- Video destacado con controles completos -->
+        <div class="video-section">
+          <h2 class="section-title" data-es="Video de la semana" data-en="Video of the week">Video de la semana</h2>
+          <video controls poster="recursos/imagenes/imagenMarioKart.jpg"
+                 class="featured-video" preload="metadata">
+            <source src="recursos/videos/CarreraMarioKart.mp4" type="video/mp4">
+            <span data-es="Tu navegador no soporta el elemento de video." data-en="Your browser does not support the video element.">Tu navegador no soporta el elemento de video.</span>
+          </video>
+        </div>
+
+        <!-- Como participar — lista ordenada HTML -->
+        <div class="how-to-section">
+          <h2 class="section-title" data-es="¿Como participar?" data-en="How to participate?">¿Como participar?</h2>
+          <ol class="steps-list">
+            <li><span data-es="Crea tu perfil o accede con tu cuenta" data-en="Create your profile or sign in">Crea tu perfil o accede con tu cuenta</span></li>
+            <li><span data-es="Explora los torneos disponibles y elige el tuyo" data-en="Browse available tournaments and pick yours">Explora los torneos disponibles y elige el tuyo</span></li>
+            <li><span data-es="Pulsa «Inscribirse» y completa el formulario" data-en="Click «Register» and complete the form">Pulsa «Inscribirse» y completa el formulario</span></li>
+            <li><span data-es="Compite en las fechas indicadas" data-en="Compete on the scheduled dates">Compite en las fechas indicadas</span></li>
+            <li><span data-es="¡Recoge tu premio si quedas entre los mejores!" data-en="Collect your prize if you finish in the top spots!">¡Recoge tu premio si quedas entre los mejores!</span></li>
+          </ol>
+          <a href="torneos.html" class="btn-primary ripple-btn" style="display:inline-block;text-decoration:none;margin-top:4px;">
+            <span data-es="Ver todos los torneos" data-en="See all tournaments">Ver todos los torneos</span>
+          </a>
+        </div>
+
+        <div id="Contenedor_Torneo_1">
+          <div class="torneo-card" data-search="torneo 2xko jesus blazquez 500">
+            <div class="trending-box">
+              <img src="recursos/iconos/iconoFuego.png" alt="Tendencia" class="fire-icon"/>
+              <span class="trending-text" data-es="tendencia" data-en="trending">tendencia</span>
+            </div>
+            <img src="recursos/imagenes/imagen2XKO.jpg" alt="Juego Torneo" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Torneo 2XKO</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Jesus Blazquez</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $500</p>
+              <a href="torneos.html" class="btn-card ripple-btn">
+                <span data-es="Ver torneo" data-en="View tournament">Ver torneo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Contenedor_Torneo_2">
+          <div class="torneo-card" data-search="torneo league of legends lol jesus blazquez 200">
+            <div class="trending-box">
+              <img src="recursos/iconos/iconoFuego.png" alt="Tendencia" class="fire-icon"/>
+              <span class="trending-text" data-es="tendencia" data-en="trending">tendencia</span>
+            </div>
+            <img src="recursos/imagenes/imagenLoL.jpg" alt="Juego Torneo" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Torneo League of Legends</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Jesus Blazquez</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $200</p>
+              <a href="torneos.html" class="btn-card ripple-btn">
+                <span data-es="Ver torneo" data-en="View tournament">Ver torneo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Contenedor_Torneo_3">
+          <div class="torneo-card" data-search="fifa champions electronic arts 2500">
+            <div class="trending-box">
+              <img src="recursos/iconos/iconoFuego.png" alt="Tendencia" class="fire-icon"/>
+              <span class="trending-text" data-es="tendencia" data-en="trending">tendencia</span>
+            </div>
+            <img src="recursos/imagenes/imagenFifa.jpg" alt="Juego Torneo" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Fifa Champions</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Electronic Arts</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $2500</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 30/11/2025</p>
+              <a href="torneos.html" class="btn-card ripple-btn">
+                <span data-es="Ver torneo" data-en="View tournament">Ver torneo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Contenedor_Torneo_4">
+          <div class="torneo-card" data-search="street fighter cup toronto evo 10000">
+            <div class="trending-box">
+              <img src="recursos/iconos/iconoFuego.png" alt="Tendencia" class="fire-icon"/>
+              <span class="trending-text" data-es="tendencia" data-en="trending">tendencia</span>
+            </div>
+            <img src="recursos/imagenes/imagenStreet.jpg" alt="Juego Torneo" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Street Fighter Cup: Toronto</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: EVO</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $10000</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 28/10/2025</p>
+              <a href="torneos.html" class="btn-card ripple-btn">
+                <span data-es="Ver torneo" data-en="View tournament">Ver torneo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Contenedor_Torneo_5">
+          <div class="torneo-card" data-search="torneo 2xko jesus blazquez 500">
+            <div class="trending-box">
+              <img src="recursos/iconos/iconoFuego.png" alt="Tendencia" class="fire-icon"/>
+              <span class="trending-text" data-es="tendencia" data-en="trending">tendencia</span>
+            </div>
+            <img src="recursos/imagenes/imagen2XKO.jpg" alt="Juego Torneo" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Torneo 2XKO</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Jesus Blazquez</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $500</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 20/10/2025</p>
+              <a href="torneos.html" class="btn-card ripple-btn">
+                <span data-es="Ver torneo" data-en="View tournament">Ver torneo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Contenedor_Torneo_6">
+          <div class="torneo-card" data-search="torneo league of legends lol jesus blazquez 200">
+            <div class="trending-box">
+              <img src="recursos/iconos/iconoFuego.png" alt="Tendencia" class="fire-icon"/>
+              <span class="trending-text" data-es="tendencia" data-en="trending">tendencia</span>
+            </div>
+            <img src="recursos/imagenes/imagenLoL.jpg" alt="Juego Torneo" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Torneo League of Legends</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Jesus Blazquez</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $200</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 21/11/2025</p>
+              <a href="torneos.html" class="btn-card ripple-btn">
+                <span data-es="Ver torneo" data-en="View tournament">Ver torneo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="Contenedor_Torneo_MK">
+          <div class="torneo-card" data-search="mario kart comunidad 300 directo">
+            <div class="trending-box">
+              <img src="recursos/iconos/iconoFuego.png" alt="Tendencia" class="fire-icon"/>
+              <span class="trending-text" data-es="tendencia" data-en="trending">tendencia</span>
+            </div>
+            <span class="live-badge" data-es="En directo" data-en="Live">En directo</span>
+            <img src="recursos/imagenes/imagenMarioKart.jpg" alt="Mario Kart" class="torneo-img"/>
+            <div class="torneo-info">
+              <h4 class="torneo-nombre">Torneo Mario Kart - Demostracion</h4>
+              <p class="torneo-organizador"><span data-es="Organizador" data-en="Organizer">Organizador</span>: Comunidad</p>
+              <p class="torneo-prize"><span data-es="Premio" data-en="Prize">Premio</span>: $300</p>
+              <p class="torneo-fecha"><span data-es="Inicio" data-en="Start">Inicio</span>: 05/03/2026</p>
+              <div class="media-links">
+                <label class="media-label" data-es="Video de partida" data-en="Match video">Video de partida</label>
+                <p><a href="recursos/videos/CarreraMarioKart.mp4" target="_blank" rel="noopener">
+                  <span data-es="Ver en pantalla completa" data-en="View fullscreen">Ver en pantalla completa</span>
+                </a></p>
+                <label class="media-label" data-es="Audio de partida" data-en="Match audio">Audio de partida</label>
+                <audio controls class="torneo-audio">
+                  <source src="recursos/videos/CarreraMarioKart.mp4" type="audio/mp4">
+                  Tu navegador no soporta el elemento <code>audio</code>.
+                </audio>
+              </div>
+              <a href="torneos.html" class="btn-card ripple-btn">
+                <span data-es="Ver torneo" data-en="View tournament">Ver torneo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bloque_central_down">
+        <ul>
+          <li><a href="documentacion.html#legal" data-es="Avisos legales" data-en="Legal notices">Avisos legales</a></li>
+          <li><a href="documentacion.html#privacidad" data-es="Politica de privacidad" data-en="Privacy policy">Politica de privacidad</a></li>
+          <li><a href="documentacion.html#cookies" data-es="Politica de cookies" data-en="Cookie policy">Politica de cookies</a></li>
+          <li><a href="contacto.html" data-es="Soporte" data-en="Support">Soporte</a></li>
+          <li class="license">
+            <a href="index.html">WebMatch-ON</a>
+            <span class="license-text">© 2026 <span data-es="por" data-en="by">por</span> <a href="index.html">Jesus Blazquez Duran</a>. <span data-es="Licenciado bajo" data-en="Licensed under">Licenciado bajo</span> <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span>
+            <span class="license-icons">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="icono cc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="icono by">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="icono nc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="icono nd">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+  </body>
+</html>

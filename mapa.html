@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jesus Blazquez"/>
+    <title>Mapa - Match-ON!</title>
+    <link rel="icon" href="recursos/imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <div id="bloque_superior">
+      <div id="logo_superior">
+        <a href="index.html"><img src="recursos/imagenes/imagenLogo.png" alt="Logo" id="logo_img"/></a>
+      </div>
+      <div id="contenedor_carrousel">
+        <h2 id="header-welcome" data-es="Bienvenido a MATCH-ON!" data-en="Welcome to MATCH-ON!">Bienvenido a MATCH-ON!</h2>
+      </div>
+    </div>
+
+    <button id="navToggle" aria-label="Abrir menu lateral">=></button>
+
+    <div id="Bloque_navegacion">
+      <nav>
+        <a href="perfil.html"><img src="recursos/iconos/iconoPerfil.svg" class="icono_nav" alt="icono_perfil"/><span class="nav-label" data-es="Perfil" data-en="Profile">Perfil</span></a>
+        <a href="menu.html"><img src="recursos/iconos/iconoMenu.svg" class="icono_nav" alt="icono_menu"/><span class="nav-label" data-es="Menu" data-en="Menu">Menu</span></a>
+        <a href="torneos.html"><img src="recursos/iconos/iconoTrofeo.svg" class="icono_nav" alt="icono_trofeo"/><span class="nav-label" data-es="Torneos" data-en="Tournaments">Torneos</span></a>
+        <a href="mapa.html"><img src="recursos/iconos/iconoMapa.svg" class="icono_nav" alt="icono_mapa"/><span class="nav-label" data-es="Mapa" data-en="Map">Mapa</span></a>
+        <a href="juegos.html"><img src="recursos/iconos/iconoArchivos.svg" class="icono_nav" alt="icono_juegos"/><span class="nav-label" data-es="Juegos" data-en="Games">Juegos</span></a>
+        <a href="ajustes.html"><img src="recursos/iconos/iconoAjustes.svg" class="icono_nav" alt="icono_ajustes"/><span class="nav-label" data-es="Ajustes" data-en="Settings">Ajustes</span></a>
+        <a href="contacto.html"><img src="recursos/iconos/iconoSobre.svg" class="icono_nav" alt="icono_contacto"/><span class="nav-label" data-es="Contacto" data-en="Contact">Contacto</span></a>
+      </nav>
+    </div>
+
+    <div id="bloque_central">
+      <div id="bloque_central_up" style="display:block;overflow-y:auto;">
+        <div class="page-hero">
+          <h1 data-es="Mapa de torneos" data-en="Tournament map">Mapa de torneos</h1>
+          <p data-es="Encuentra torneos presenciales cerca de tu ciudad" data-en="Find in-person tournaments near your city">Encuentra torneos presenciales cerca de tu ciudad</p>
+        </div>
+
+        <div class="page-content" style="max-width:900px;">
+
+          <!-- Mapa placeholder -->
+          <div class="map-placeholder">
+            <div class="map-placeholder-text" data-es="Mapa interactivo" data-en="Interactive map">Mapa interactivo</div>
+            <div class="map-placeholder-sub" data-es="(Integracion con mapa disponible proximamente)" data-en="(Map integration coming soon)">(Integracion con mapa disponible proximamente)</div>
+          </div>
+
+          <!-- Filtros de region -->
+          <div class="filter-bar" style="margin-bottom:18px;">
+            <button class="filter-chip active ripple-btn" data-filter="all" data-es="Todas las regiones" data-en="All regions">Todas las regiones</button>
+            <button class="filter-chip ripple-btn" data-filter="europa" data-es="Europa" data-en="Europe">Europa</button>
+            <button class="filter-chip ripple-btn" data-filter="norteamerica" data-es="Norte America" data-en="North America">Norte America</button>
+            <button class="filter-chip ripple-btn" data-filter="asia" data-es="Asia" data-en="Asia">Asia</button>
+          </div>
+
+          <!-- Lista de localizaciones -->
+          <h2 class="section-title" data-es="Sedes activas" data-en="Active venues">Sedes activas</h2>
+          <div class="location-list">
+
+            <div class="location-item">
+              <div class="location-pin"><img src="recursos/iconos/iconoMapa.svg" alt=""/></div>
+              <div>
+                <div class="location-name">Toronto, Canada</div>
+                <div class="location-info" data-es="Street Fighter Cup · 28/10/2025 · 128 participantes" data-en="Street Fighter Cup · 28/10/2025 · 128 participants">Street Fighter Cup · 28/10/2025 · 128 participantes</div>
+              </div>
+              <a href="torneos.html" class="btn-card ripple-btn" style="margin-left:auto;margin-top:0;">
+                <span data-es="Ver" data-en="View">Ver</span>
+              </a>
+            </div>
+
+            <div class="location-item">
+              <div class="location-pin"><img src="recursos/iconos/iconoMapa.svg" alt=""/></div>
+              <div>
+                <div class="location-name">Madrid, España</div>
+                <div class="location-info" data-es="Torneo 2XKO · 20/10/2025 · 16 participantes" data-en="Torneo 2XKO · 20/10/2025 · 16 participants">Torneo 2XKO · 20/10/2025 · 16 participantes</div>
+              </div>
+              <a href="torneos.html" class="btn-card ripple-btn" style="margin-left:auto;margin-top:0;">
+                <span data-es="Ver" data-en="View">Ver</span>
+              </a>
+            </div>
+
+            <div class="location-item">
+              <div class="location-pin"><img src="recursos/iconos/iconoMapa.svg" alt=""/></div>
+              <div>
+                <div class="location-name">Berlin, Alemania</div>
+                <div class="location-info" data-es="Torneo League of Legends · 21/11/2025 · 32 participantes" data-en="League of Legends Tournament · 21/11/2025 · 32 participants">Torneo League of Legends · 21/11/2025 · 32 participantes</div>
+              </div>
+              <a href="torneos.html" class="btn-card ripple-btn" style="margin-left:auto;margin-top:0;">
+                <span data-es="Ver" data-en="View">Ver</span>
+              </a>
+            </div>
+
+            <div class="location-item">
+              <div class="location-pin"><img src="recursos/iconos/iconoMapa.svg" alt=""/></div>
+              <div>
+                <div class="location-name">Tokio, Japon</div>
+                <div class="location-info" data-es="FIFA Champions · 30/11/2025 · 64 participantes" data-en="FIFA Champions · 30/11/2025 · 64 participants">FIFA Champions · 30/11/2025 · 64 participantes</div>
+              </div>
+              <a href="torneos.html" class="btn-card ripple-btn" style="margin-left:auto;margin-top:0;">
+                <span data-es="Ver" data-en="View">Ver</span>
+              </a>
+            </div>
+
+            <div class="location-item">
+              <div class="location-pin"><img src="recursos/iconos/iconoMapa.svg" alt=""/></div>
+              <div>
+                <div class="location-name" data-es="Online — Global" data-en="Online — Global">Online — Global</div>
+                <div class="location-info" data-es="Torneo Mario Kart · 05/03/2026 · EN DIRECTO" data-en="Mario Kart Tournament · 05/03/2026 · LIVE">Torneo Mario Kart · 05/03/2026 · EN DIRECTO</div>
+              </div>
+              <a href="torneos.html" class="btn-card ripple-btn" style="margin-left:auto;margin-top:0;">
+                <span data-es="Ver" data-en="View">Ver</span>
+              </a>
+            </div>
+
+          </div>
+
+          <div style="margin-top:24px;padding:18px;background:#fff;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.07);">
+            <p style="margin:0;font-size:.9rem;color:#555;" data-es="¿Quieres organizar un torneo en tu ciudad? Contactanos y te ayudamos a gestionar la sede." data-en="Want to organize a tournament in your city? Contact us and we'll help you manage the venue.">¿Quieres organizar un torneo en tu ciudad? Contactanos y te ayudamos a gestionar la sede.</p>
+            <a href="contacto.html" class="btn-secondary ripple-btn" style="display:inline-block;margin-top:12px;text-decoration:none;">
+              <span data-es="Contactar" data-en="Contact us">Contactar</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="bloque_central_down">
+        <ul>
+          <li><a href="documentacion.html#legal" data-es="Avisos legales" data-en="Legal notices">Avisos legales</a></li>
+          <li><a href="contacto.html" data-es="Soporte" data-en="Support">Soporte</a></li>
+          <li class="license"><a href="index.html">WebMatch-ON</a>
+            <span class="license-text">© 2026 <a href="index.html">Jesus Blazquez Duran</a>. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></span>
+            <span class="license-icons">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="cc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="by">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="nc">
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="nd">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+  </body>
+</html>
