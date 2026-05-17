@@ -34,4 +34,4 @@ Además de todos estos elementos, se han añadido:
 
 Gracias por su atención, espero que disfrute de la pagina
 
-El enlace para acceder a la pagina es:
+El enlace para acceder a la pagina es: https://jblazquezd04.github.io/blazquez_duran_Jesus_disenho_web_final/
